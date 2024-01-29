@@ -45,13 +45,18 @@ function performSearch(query) {
 }
 
 function displayResults(data) {
+    console.log(data); // Log the full response data to the console
     const resultsContainer = document.getElementById('searchResults');
     resultsContainer.innerHTML = ''; // Clear previous results.
 
-    // Assuming the data returned includes a response field with the text.
-    // You'll need to adjust this based on the actual structure of the response.
-    const responseText = data.responses[0].message.content; // Adjust this line as needed.
-    const resultElement = document.createElement('div');
-    resultElement.textContent = responseText;
-    resultsContainer.appendChild(resultElement);
+    try {
+        // Assuming the data returned includes a response field with the text.
+        const responseText = data.responses[0].message.content; // Adjust this line as needed.
+        const resultElement = document.createElement('div');
+        resultElement.textContent = responseText;
+        resultsContainer.appendChild(resultElement);
+    } catch (error) {
+        console.error('Error displaying search results:', error);
+        // Optionally, display a user-friendly error message in the UI.
+    }
 }
