@@ -10,7 +10,7 @@ function performSearch(query) {
     }
 
     // The endpoint of the Perplexity API.
-    const apiUrl = 'https://damp-reaches-11122.herokuapp.com/search';
+    const apiUrl = '/search';
 
     // The data to be sent in the POST request.
     const postData = {
