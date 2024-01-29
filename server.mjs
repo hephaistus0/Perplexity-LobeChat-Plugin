@@ -15,7 +15,11 @@
   const PORT = process.env.PORT || 3001;
   const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use('/public', express.static(path.join(__dirname, 'public'), {
+    setHeaders: (res, path, stat) => {
+      res.set('Access-Control-Allow-Origin', '*');
+    }
+  }));
 
   app.post('/search', async (req, res) => {
       try {
