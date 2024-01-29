@@ -18,6 +18,7 @@
   },
   "api": [
     {
+      "url": "https://api.perplexity.ai/chat/completions",
       "name": "search",
       "description": "Search the web using perplexity",
       "parameters": {
