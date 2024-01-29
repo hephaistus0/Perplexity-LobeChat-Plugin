@@ -15,7 +15,7 @@
   const PORT = process.env.PORT || 3001;
   const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
   app.get('/', (req, res) => {
       res.sendFile(path.join(__dirname, 'public', 'index.html'));
