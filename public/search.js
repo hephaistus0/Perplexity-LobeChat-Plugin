@@ -50,8 +50,10 @@ function displayResults(data) {
     resultsContainer.innerHTML = ''; // Clear previous results.
 
     try {
-        // Assuming the data returned includes a response field with the text.
-        const responseText = data.responses[0].message.content; // Adjust this line as needed.
+        // Adjusted to match the structure of the response data.
+        // Assuming the choices array contains the response text you want to display.
+        // You may need to adjust the index or property names based on the actual API response.
+        const responseText = data.choices[0].message.content; // Adjust this line as needed.
         const resultElement = document.createElement('div');
         resultElement.textContent = responseText;
         resultsContainer.appendChild(resultElement);
