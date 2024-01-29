@@ -19,6 +19,7 @@
   "api": [
     {
       "url": "https://api.perplexity.ai/chat/completions",
+      "authorization": "Bearer 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"
       "name": "search",
       "description": "Search the web using perplexity",
       "parameters": {
