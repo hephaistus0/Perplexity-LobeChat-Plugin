@@ -10,5 +10,29 @@
   ],
   "scripts": {
     "search": "https://hephaistus0.github.io/Perplexity-LobeChat-Plugin/search.js"
-  }
+  },
+  "identifier": "com.hephaistus0.perplexitysearch",
+  "meta": {
+    "icon": "https://hephaistus0.github.io/Perplexity-LobeChat-Plugin/icon.png",
+    "color": "#123456"
+  },
+  "api": [
+    {
+      "name": "search",
+      "description": "Search the web using perplexity",
+      "inputs": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "name": "results",
+          "type": "array"
+        }
+      ]
+    }
+  ]
 }
