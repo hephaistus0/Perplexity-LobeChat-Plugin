@@ -21,6 +21,10 @@
     }
   }));
 
+  app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
   app.post('/search', async (req, res) => {
       try {
           const response = await fetch(PERPLEXITY_API_URL, {
