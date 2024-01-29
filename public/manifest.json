@@ -20,14 +20,16 @@
     {
       "name": "search",
       "description": "Search the web using perplexity",
-      "parameters": [
-        {
-          "name": "query",
-          "in": "query",
-          "required": true,
-          "type": "string"
-        }
-      ],
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "The search query",
+            "type": "string"
+          }
+        },
+        "required": ["query"],
+        "type": "object"
+      },
       "responses": {
         "200": {
           "description": "Successful operation",
@@ -44,3 +46,6 @@
           }
         }
       }
+    }
+  ]
+}
