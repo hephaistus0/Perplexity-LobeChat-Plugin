@@ -32,11 +32,11 @@
         "200": {
           "description": "Successful operation",
           "schema": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "results": {
+            "type": "object",
+            "properties": {
+              "results": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
               }
@@ -44,6 +44,3 @@
           }
         }
       }
-    }
-  ]
-}
