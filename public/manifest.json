@@ -20,19 +20,30 @@
     {
       "name": "search",
       "description": "Search the web using perplexity",
-      "inputs": [
+      "parameters": [
         {
           "name": "query",
-          "type": "string",
-          "required": true
+          "in": "query",
+          "required": true,
+          "type": "string"
         }
       ],
-      "outputs": [
-        {
-          "name": "results",
-          "type": "array"
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "schema": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "string"
+                }
+              }
+            }
+          }
         }
-      ]
+      }
     }
   ]
 }
