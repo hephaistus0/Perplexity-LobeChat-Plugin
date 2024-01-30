@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "This plugin uses a perplexity API to query the web and return relevant search results.",
   "author": "Justin Hall",
-  "main": "https://hephaistus0.github.io/Perplexity-LobeChat-Plugin/index.html",
+  "main": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/",
   "permissions": [
     "http://*/*",
     "https://*/*"
   ],
   "scripts": {
-    "search": "https://hephaistus0.github.io/Perplexity-LobeChat-Plugin/search.js"
+    "search": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/search.js"
   },
   "identifier": "perplexity-search",
   "meta": {
@@ -18,8 +18,7 @@
   },
   "api": [
     {
-      "url": "https://api.perplexity.ai/chat/completions",
-      "authorization": "Bearer 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",
+      "url": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/api/search",
       "name": "search",
       "description": "Search the web using perplexity",
       "parameters": {
