@@ -1,21 +1,4 @@
 {
-  "name": "Perplexity Search Plugin",
-  "version": "1.0.0",
-  "description": "This plugin uses a perplexity API to query the web and return relevant search results.",
-  "author": "Justin Hall",
-  "main": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/",
-  "permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
-  "scripts": {
-    "search": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/search.js"
-  },
-  "identifier": "perplexity-search",
-  "meta": {
-    "icon": "https://hephaistus0.github.io/Perplexity-LobeChat-Plugin/icon.png",
-    "color": "#123456"
-  },
   "api": [
     {
       "url": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/search.js",
@@ -48,5 +31,12 @@
         }
       }
     }
-  ]
+  ],
+  "gateway": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/api/gateway", // if applicable
+  "identifier": "perplexity-search",
+  "ui": {
+    "url": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com",
+    "height": 200 // adjust as needed
+  },
+  "version": "1.0.0"
 }
