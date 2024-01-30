@@ -1,3 +1,5 @@
+import { lobeChat } from '@lobehub/chat-plugin-sdk/client'
+
 LobeChat.registerPlugin({
     id: 'PerplexiLobe',
     name: 'PerplexiLobe: A Perplexity AI Plugin for LobeChat',
