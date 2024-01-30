@@ -1,18 +1,3 @@
-console.log(LobeChat);
-
-// Check if LobeChat is available
-if (typeof LobeChat !== 'undefined') {
-  // Use the hook to register the plugin
-  LobeChat.useOnStandaloneInit(() => {
-    LobeChat.registerPlugin({
-      id: 'PerplexiLobe',
-      name: 'PerplexiLobe: A Perplexity AI Plugin for LobeChat',
-    });
-  });
-} else {
-  console.error('LobeChat is not defined. This script should only run within the LobeChat environment.');
-}
-
 document.getElementById('searchButton').addEventListener('click', function() {
     const query = document.getElementById('searchQuery').value;
     performSearch(query);
