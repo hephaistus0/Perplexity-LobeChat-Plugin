@@ -1,4 +1,4 @@
-import { lobeChat } from '@lobehub/chat-plugin-sdk/client'
+console.log(LobeChat);
 
 LobeChat.registerPlugin({
     id: 'PerplexiLobe',
