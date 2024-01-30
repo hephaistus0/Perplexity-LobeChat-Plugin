@@ -1,3 +1,8 @@
+LobeChat.registerPlugin({
+    id: 'PerplexiLobe',
+    name: 'PerplexiLobe: A Perplexity AI Plugin for LobeChat',
+});
+
 document.getElementById('searchButton').addEventListener('click', function() {
     const query = document.getElementById('searchQuery').value;
     performSearch(query);
