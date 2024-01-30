@@ -39,7 +39,7 @@
     "title": "Perplexity Search Plugin"
   },
   "ui": {
-    "url": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com",
+    "url": "https://damp-reaches-11122-434fcd8858d2.herokuapp.com/index.html?query={query}",
     "height": 200
   },
   "type": "standalone"
